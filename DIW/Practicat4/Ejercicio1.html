@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG con Líneas Gruesas</title>
+  <style>
+   
+     .cabeza{
+      fill: #cd803d;
+    }
+
+   
+    .extremidades {
+      stroke:  #cd803d;
+      stroke-width: 40px;
+      stroke-linecap: round;
+    }
+
+  
+    .eye {
+      fill: #ffffff;
+      
+      stroke-width: 2;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <svg width="200" height="200" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+    
+    <!-- Cabeza -->
+    <circle cx="0" cy="-50" r="40" class="cabeza" />
+    <!-- Brazos -->
+    <line x1="-50" y1="0" x2="50" y2="0" class="extremidades" />
+    <!-- Piernas -->
+    <line x1="0" y1="0" x2="-30" y2="70" class="extremidades" />
+    <line x1="0" y1="4" x2="30" y2="70" class="extremidades" />
+
+     <!-- Ojos -->
+     <circle cx="-17" cy="-60" r="5" class="eye" /> <!-- Ojo izquierdo -->
+     <circle cx="16" cy="-60" r="5" class="eye" /> <!-- Ojo derecho -->
+ 
+     <!-- Boca -->
+     <rect rx= "4" x="-15" y="-40" width="30" height="7" class="mouth" style="fill:#cd803d; stroke-width:3 ; stroke: #ffffff; " />
+     <!-- Botones -->
+     <circle cx="0" cy="0" r="7" class="button" /> <!-- Botón superior -->
+     <circle cx="0" cy="25" r="7" class="button" /> <!-- Botón medio -->
+    
+  </svg>
+</body>
+</html>
